@@ -8,6 +8,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import org.verapdf.core.ModelParsingException;
 import org.verapdf.rest.environment.Environment;
 import org.verapdf.rest.environment.Environments;
 
@@ -52,6 +53,7 @@ public final class ApiResource {
      */
     @Path("/profiles")
     public static ProfileResource getProfileResource() {
+        ModelParsingException modelParsingException = new ModelParsingException();
         return new ProfileResource();
     }
 
