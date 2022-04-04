@@ -52,8 +52,9 @@ public final class ApiResource {
      * @return a new {@link org.verapdf.rest.resources.ProfileResource}
      */
     @Path("/profiles")
-    public static ProfileResource getProfileResource() {
+    public static ProfileResource getProfileResource() throws Exception {
         ModelParsingException modelParsingException = new ModelParsingException();
+        if (1==1) throw new Exception(modelParsingException.getText());
         return new ProfileResource();
     }
 

@@ -164,6 +164,11 @@
       <version>${verapdf.validation.version}</version>
     </dependency>
     <dependency>
+      <groupId>org.verapdf</groupId>
+      <artifactId>core</artifactId>
+      <version>1.21.0-SNAPSHOT-mvd</version>
+    </dependency>
+    <dependency>
     	<groupId>com.smoketurner</groupId>
     	<artifactId>dropwizard-swagger</artifactId>
     	<version>1.3.17-1</version>
